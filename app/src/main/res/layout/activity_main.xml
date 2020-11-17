@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UB-Plato now!"
+        android:text="UB Trier now!"
         android:id="@+id/txtTitle"
         android:textStyle="bold"
         android:textSize="16sp"
