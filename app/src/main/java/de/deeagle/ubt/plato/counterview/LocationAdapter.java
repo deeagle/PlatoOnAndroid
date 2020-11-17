@@ -2,10 +2,13 @@ package de.deeagle.ubt.plato.counterview;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -59,13 +62,15 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView txtTitle;
         private TextView curPercent;
-        public CardView parent;
+        private CardView parent;
+        private ProgressBar progressBar;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             txtTitle = itemView.findViewById(R.id.txtTitle);
             curPercent = itemView.findViewById(R.id.txtCurPercent);
             parent = itemView.findViewById(R.id.parent);
+            progressBar = itemView.findViewById(R.id.progressBar);
         }
 
         public TextView getTxtTitle() {
@@ -82,6 +87,18 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.ViewHo
 
         public void setCurrentPercentMsg(int currentPercent) {
             curPercent.setText(String.format("Current workload is %d%%", currentPercent));
+            progressBar.setProgress(currentPercent);
+            setProgressBarColor(currentPercent);
+        }
+
+        private void setProgressBarColor(int currentPercent) {
+            if (currentPercent > 80) {
+                progressBar.getProgressDrawable().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN);
+            } else if (currentPercent > 50) {
+                progressBar.getProgressDrawable().setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_IN);
+            } else {
+                progressBar.getProgressDrawable().setColorFilter(Color.GREEN, PorterDuff.Mode.SRC_IN);
+            }
         }
     }
 }
