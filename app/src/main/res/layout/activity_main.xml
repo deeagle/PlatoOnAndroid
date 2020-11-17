@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UB-Plato now!"
+        android:text="UB Trier now!"
         android:id="@+id/txtTitle"
         android:textStyle="bold"
         android:textSize="16sp"
@@ -24,13 +24,17 @@
 
     <Button
         android:id="@+id/btnUpdateStats"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="56dp"
-        android:text="Get stats"
-        android:onClick="bntUpdateStatsClicked" />
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="bntUpdateStatsClicked"
+        android:text="Update stats" />
 
 </RelativeLayout>

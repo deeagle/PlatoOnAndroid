@@ -41,6 +41,7 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.ViewHo
         Log.d(TAG, String.format("onBindViewHolder: got location <%s> on position <%d>", location.getName(), position));
         holder.getTxtTitle().setText(location.getName());
         holder.setCurrentPercentMsg(location.getCurrentPercent());
+        holder.setOpenState(location.getState());
         holder.getParent().setOnClickListener((v) -> {
             Intent intent = new Intent(context, WebsiteActivity.class);
             intent.putExtra(WebsiteActivity.TRANSFER_KEY_URL_NAME, "https://ub-plato.uni-trier.de/visitorDisplay.php");
@@ -61,6 +62,7 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.ViewHo
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView txtTitle;
+        private TextView isOpen;
         private TextView curPercent;
         private CardView parent;
         private ProgressBar progressBar;
@@ -68,6 +70,7 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.ViewHo
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             txtTitle = itemView.findViewById(R.id.txtTitle);
+            isOpen = itemView.findViewById(R.id.txtIsOpen);
             curPercent = itemView.findViewById(R.id.txtCurPercent);
             parent = itemView.findViewById(R.id.parent);
             progressBar = itemView.findViewById(R.id.progressBar);
@@ -99,6 +102,19 @@ public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.ViewHo
             } else {
                 progressBar.getProgressDrawable().setColorFilter(Color.GREEN, PorterDuff.Mode.SRC_IN);
             }
+        }
+
+        public void setOpenState(String openState) {
+            int color = Color.BLUE;
+            String stateLabel = "CLOSED";
+
+            if (openState != null && openState.equals("OPEN")) {
+                color = Color.parseColor(PlatoColor.LOCATION_STATE_OPEN.getStrCode());
+                stateLabel = "OPEN";
+            }
+
+            isOpen.setText(String.format("(%s)", stateLabel));
+            isOpen.setTextColor(color);
         }
     }
 }
