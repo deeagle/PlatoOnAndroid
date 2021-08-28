@@ -19,6 +19,8 @@ coloured representation green').
   <figure>
     <img src="misc/PlatoOnAndroid-Screenshot.png" 
          alt="Shows the general UI with two rooms (Campus I and II of the University Library Trier) with current utilisation in a utilisation graph (libraries are open, utilisation at 11% and 3% with the coloured representation green')."
+         height="500px"
+         width="250px"
          style="object-fit:contain;
                 height: 500px;
                 width: 250px;" 
