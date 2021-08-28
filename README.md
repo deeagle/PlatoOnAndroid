@@ -25,7 +25,6 @@ coloured representation green').
                 height: 500px;
                 width: 250px;" 
         />
-
     <figcaption>Screenshot on Android (Version 10, 08.2021)</figcaption>
   </figure>
 </div>
