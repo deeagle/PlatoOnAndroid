@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/400756548.svg)](https://zenodo.org/badge/latestdoi/400756548)
+
 # PlatoOnAndroid
 
 This is an OpenData feasibility analysis as an Android prototype.
