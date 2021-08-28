@@ -13,5 +13,11 @@ At the touch of a button, the data is retrieved via API and displayed with a pro
 picture).
 
 <div align="center">
-  <img align="center" src="misc/PlatoOnAndroid-Screenshot.png" width="300"/>
+  <figure>
+    <img align="center" 
+         src="misc/PlatoOnAndroid-Screenshot.png" 
+         alt="Shows the general UI with two rooms (Campus I and II of the University Library Trier) with current utilisation in a utilisation graph (libraries are open, utilisation at 11% and 3% with the coloured representation green')." 
+         width="300"/>
+    <figcaption>Screenshot on Android (Version 10)</figcaption>
+  </figure>
 </div>
