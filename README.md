@@ -1,11 +1,11 @@
-# PlatonOnAndroid
+# PlatoOnAndroid
 
 This is an OpenData feasibility analysis as an Android prototype.
 
 ## Why?
 
 Within my master thesis at the TH Köln I implemented a web service. This prototype was the first
-OpenData test against the API and its documentation.
+OpenData test against the public API and its documentation.
 
 ## What can it do?
 
