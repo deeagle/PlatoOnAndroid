@@ -9,13 +9,15 @@ OpenData test against the API and its documentation.
 
 ## What can it do?
 
-At the touch of a button, the data is retrieved via API and displayed with a progress graph (see
-picture).
+At the touch of a button, the data is retrieved via API and displayed with a progress graph. The
+picture shows the general UI with two rooms (Campus I and II of the University Library Trier) with
+current utilisation in a utilisation graph (libraries are open, utilisation at 11% and 3% with the
+coloured representation green').
+
 
 <div align="center">
   <figure>
-    <img align="center" 
-         src="misc/PlatoOnAndroid-Screenshot.png" 
+    <img src="misc/PlatoOnAndroid-Screenshot.png" 
          alt="Shows the general UI with two rooms (Campus I and II of the University Library Trier) with current utilisation in a utilisation graph (libraries are open, utilisation at 11% and 3% with the coloured representation green')." 
          width="300"/>
     <figcaption>Screenshot on Android (Version 10)</figcaption>
