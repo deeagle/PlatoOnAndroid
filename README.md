@@ -30,3 +30,8 @@ coloured representation green').
     <figcaption>Screenshot on Android (Version 10, 08.2021)</figcaption>
   </figure>
 </div>
+
+## Weblinks
+
+- [ub-plato.uni-trier.de](ub-plato.uni-trier.de)
+- [API v0.1.3 (SwaggerHub.com)](https://app.swaggerhub.com/apis-docs/deeagle/UB-Plato/0.1.3)
