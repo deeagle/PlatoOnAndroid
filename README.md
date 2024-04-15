@@ -1,8 +1,18 @@
-[![DOI](https://zenodo.org/badge/400756548.svg)](https://zenodo.org/badge/latestdoi/400756548)
-
 # PlatoOnAndroid
 
+![Maintained](https://img.shields.io/badge/maintained%3F-no!-red.svg?style=flat)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&style=flat)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white&style=flat)
+
 This is an OpenData feasibility analysis as an Android prototype.
+
+[![DOI](https://zenodo.org/badge/400756548.svg)](https://zenodo.org/badge/latestdoi/400756548)
+
+This project has been archived and is no longer maintained.
+Thank you to everyone who contributed to its development and made it a success.
+If you have any questions or concerns, please feel free to contact me directly.
+
+Archive date: 15.04.2024
 
 ## Why?
 
